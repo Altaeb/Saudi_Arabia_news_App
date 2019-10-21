@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="country_news">eg</string>
+
+    <string name="app_name">اخبار مصر</string>
+    <string name="top_headlines">أهم العناوين</string>
+    <string name="back_drop">ستار خلفي</string>
+    <string name="top_shadow">الظل العلوي</string>
+    <string name="bottom_shadow">الظل السفلي</string>
+    <string name="news_for_you">أخبار لك </string>
+    <string name="subtitle">عنوان فرعي</string>
+    <string name="title_of_news">عنوان الأخبار</string>
+    <string name="a_time_ago">منذ زمن</string>
+    <string name="ic_date">Ic date</string>
+    <string name="error_title">عنوان الخطأ</string>
+    <string name="error_message">رسالة خطأ</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="author">مؤلف</string>
+    <string name="_01_january_1994">01 يناير 1994</string>
+    <string name="title">عنوان كتاب</string>
+    <string name="desc">تفاصيل</string>
+    <string name="source">مصدر</string>
+    <string name="time">زمن</string>
+    <string name="search">بحث</string>
+    <string name="settings">ضبط</string>
+    <string name="share">شارك</string>
+    <string name="open_with_browser">فتح مع المتصفح</string>
+    <string name="no_result">لا نتيجة</string>
+    <string name="please_try_again">حاول مرة اخرى!</string>
+    <string name="oops">عذرًا ^_^</string>
+    <string name="network_failure">فشل الشبكة ، يرجى المحاولة مرة أخرى</string>
+    <string name="query_hint">بحث آخر الأخبار ...</string>
+    <string name="type_more_than_two_letters">اكتب أكثر من حرفين!</string>
+    <string name="share_from_the_news_app">مشاركة من تطبيق الأخبار</string>
+    <string name="share_with">شارك مع :</string>
+    <string name="sorry_cannot_be_share">حسنًا .. عذرًا ، لا يمكن المشاركة</string>
+</resources>

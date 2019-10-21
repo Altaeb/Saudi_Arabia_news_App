@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FrameLayout_item">
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardView_item"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <RelativeLayout style="@style/relativeLayout_item">
+
+            <ImageView
+                android:id="@+id/image_top"
+                style="@style/imageTop_item"
+                tools:ignore="UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/shadow_bottom"
+                style="@style/shadowBottom_item"
+                android:src="@drawable/bottom_shadow" />
+
+            <ProgressBar
+                android:id="@+id/prograss_load_photo"
+                style="@style/progressBar_item" />
+
+            <TextView
+                android:id="@+id/author"
+                style="@style/author_item"
+                android:text="@string/author" />
+
+            <FrameLayout
+                android:id="@+id/layoutDate"
+                style="@style/frameLayout_item">
+
+                <ImageView
+                    style="@style/icDate_item"
+                    android:src="@drawable/ic_date" />
+
+                <TextView
+                    android:id="@+id/publishedAt"
+                    style="@style/publishedAt"
+                    android:text="@string/_01_january_1994" />
+
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/title_item"
+                android:text="@string/title" />
+
+
+            <TextView
+                android:id="@+id/desc"
+                style="@style/description_item"
+                android:text="@string/desc" />
+
+            <TextView
+                android:id="@+id/source"
+                style="@style/source_item"
+                android:text="@string/source" />
+
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/time_item"
+                android:text="@string/time" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

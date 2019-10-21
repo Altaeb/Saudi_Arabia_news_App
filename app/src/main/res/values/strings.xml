@@ -1,4 +1,7 @@
 <resources>
+
+    <string name="country_news">sa</string>
+
     <string name="app_name">Saudi Arabia news</string>
     <string name="top_headlines">Top Headlines</string>
     <string name="back_drop">Back drop</string>
@@ -22,4 +25,13 @@
     <string name="settings">Settings</string>
     <string name="share">Share</string>
     <string name="open_with_browser">Open with browser</string>
+    <string name="no_result">No Result</string>
+    <string name="please_try_again">Please Try Again!</string>
+    <string name="oops">Oops..</string>
+    <string name="network_failure">Network failure, Please Try Again</string>
+    <string name="query_hint">Search Latest News...</string>
+    <string name="type_more_than_two_letters">Type more than two letters!</string>
+    <string name="share_from_the_news_app">Share from the News App</string>
+    <string name="share_with">Share with :</string>
+    <string name="sorry_cannot_be_share">Hmm.. Sorry,  Cannot be share</string>
 </resources>

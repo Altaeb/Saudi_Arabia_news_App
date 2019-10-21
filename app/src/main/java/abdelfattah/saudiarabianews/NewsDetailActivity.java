@@ -1,5 +1,6 @@
 package abdelfattah.saudiarabianews;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -159,12 +160,12 @@ public class NewsDetailActivity extends AppCompatActivity implements AppBarLayou
                 Intent i = new Intent ( Intent.ACTION_SEND );
                 i.setType ( "text/plan" );
                 i.putExtra ( Intent.EXTRA_SUBJECT, mSource );
-                String body = mTitle + "\n" + mUrl + "\n" + "Share from the News App" + "\n";
+                String body = mTitle + "\n" + mUrl + "\n" + this.getString( R.string.share_from_the_news_app) + "\n";
                 i.putExtra ( Intent.EXTRA_TEXT, body );
-                startActivity ( Intent.createChooser ( i, "Share with :" ) );
+                startActivity ( Intent.createChooser ( i,this.getString( R.string.share_with) ) );
 
             } catch (Exception e) {
-                Toast.makeText ( this, "Hmm.. Sorry, \nCannot be share", Toast.LENGTH_SHORT ).show ();
+                Toast.makeText ( this,this.getString( R.string.sorry_cannot_be_share), Toast.LENGTH_SHORT ).show ();
             }
         }
 

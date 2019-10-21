@@ -39,7 +39,6 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
     public static final String API_KEY = "065faaf4f540443f9945e9091d10272d";
-    public static final String country = "sa";
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private List<Article> articles = new ArrayList<> ();
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         swipeRefreshLayout.setRefreshing ( true );
 
         ApiInterface apiInterface = ApiClient.getApiClient ().create ( ApiInterface.class );
-
+        String country = getString( R.string.country_news);
         String language = Utils.getLanguage ();
 
         Call<News> call;
@@ -134,8 +133,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
                     showErrorMessage (
                             R.drawable.no_result,
-                            "No Result",
-                            "Please Try Again!\n" +
+                            getString( R.string.no_result),
+                            getString( R.string.please_try_again) +
                             errorCode );
 
                 }
@@ -147,8 +146,8 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 swipeRefreshLayout.setRefreshing ( false );
                 showErrorMessage (
                         R.drawable.oops,
-                        "Oops..",
-                        "Network failure, Please Try Again\n" +
+                        getString( R.string.oops),
+                        getString( R.string.network_failure) +
                         t.toString () );
             }
         } );
@@ -201,14 +200,14 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         MenuItem searchMenuItem = menu.findItem ( R.id.action_search );
 
         searchView.setSearchableInfo ( searchManager.getSearchableInfo ( getComponentName () ) );
-        searchView.setQueryHint ( "Search Latest News..." );
+        searchView.setQueryHint (getString( R.string.query_hint) );
         searchView.setOnQueryTextListener ( new SearchView.OnQueryTextListener () {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 if (query.length () > 2) {
                     onLoadingSwipeRefresh ( query );
                 } else {
-                    Toast.makeText ( MainActivity.this, "Type more than two letters!", Toast.LENGTH_SHORT ).show ();
+                    Toast.makeText ( MainActivity.this,getString( R.string.type_more_than_two_letters), Toast.LENGTH_SHORT ).show ();
                 }
                 return false;
             }

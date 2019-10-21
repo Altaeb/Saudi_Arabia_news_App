@@ -116,7 +116,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
             published_ad = itemView.findViewById ( R.id.publishedAt );
             source = itemView.findViewById ( R.id.source );
             time = itemView.findViewById ( R.id.time );
-            imageView = itemView.findViewById ( R.id.img );
+            imageView = itemView.findViewById ( R.id.image_top );
             progressBar = itemView.findViewById ( R.id.prograss_load_photo );
 
             this.onItemClickListener = onItemClickListener;

@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    tools:context="abdelfattah.saudiarabianews.MainActivity">
+    tools:context="abdelfattah.saudiarabianews.MainActivity"
+    style="@style/coordinatorLayout">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorBackground">
+        style="@style/swipeRefreshLayout">
 
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView style="@style/nestedScrollView">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -22,23 +16,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/topheadelines"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp_16"
-                    android:layout_marginTop="@dimen/dp_10"
-                    android:layout_marginRight="@dimen/dp_16"
-                    android:text="@string/top_headlines"
-                    android:textColor="@color/colorTextTitle"
-                    android:textSize="@dimen/sp_17"
-                    android:textStyle="bold"
-                    android:visibility="invisible" />
+                    android:id="@+id/topHeaderLines"
+                    style="@style/topHeaderLines"
+                    android:text="@string/top_headlines" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:scrollbars="vertical" />
+                    style="@style/recyclerView" />
 
             </LinearLayout>
 

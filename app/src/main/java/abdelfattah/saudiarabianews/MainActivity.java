@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         swipeRefreshLayout.setOnRefreshListener ( this );
         swipeRefreshLayout.setColorSchemeResources ( R.color.colorAccent );
 
-        topHeadline = findViewById ( R.id.topheadelines );
+        topHeadline = findViewById ( R.id.topHeaderLines );
         recyclerView = findViewById ( R.id.recyclerView );
         layoutManager = new LinearLayoutManager ( MainActivity.this );
         recyclerView.setLayoutManager ( layoutManager );
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         adapter.setOnItemClickListener ( new Adapter.OnItemClickListener () {
             @Override
             public void onItemClick(View view, int position) {
-                ImageView imageView = view.findViewById ( R.id.img );
+                ImageView imageView = view.findViewById ( R.id.image_top );
                 Intent intent = new Intent ( MainActivity.this, NewsDetailActivity.class );
 
                 Article article = articles.get ( position );

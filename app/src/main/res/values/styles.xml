@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -11,5 +11,383 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="swipeRefreshLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+    <style name="nestedScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="topHeaderLines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="recyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="coordinatorLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+    <style name="appBarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_250</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="CollapsingToolbarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="backDrop">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:transitionName" tools:targetApi="lollipop">img</item>
+        <item name="android:contentDescription">@string/back_drop</item>
+    </style>
+
+    <style name="headerContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="img1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_70</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/top_shadow</item>
+    </style>
+
+    <style name="img2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_80</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/bottom_shadow</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:contentInsetStart" tools:targetApi="lollipop">@dimen/zero</item>
+        <item name="android:contentInsetLeft" tools:targetApi="lollipop">@dimen/zero</item>
+    </style>
+
+    <style name="titleOnAppbar" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="subtitleOnAppbar" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="nestedScrollView_newsDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="relativeLayout_newsDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:layout_marginBottom">@dimen/dp_20</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+    </style>
+
+    <style name="title_newsDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">@dimen/sp_19</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="time_newsDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="cardView_newsDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_12</item>
+        <item name="android:layout_marginBottom">@dimen/dp_20</item>
+    </style>
+
+    <style name="progressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_50</item>
+        <item name="android:layout_marginBottom">@dimen/dp_70</item>
+    </style>
+
+    <style name="webView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="frameLayout_newsDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:layout_marginBottom">@dimen/dp_410</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@drawable/round_white</item>
+        <item name="android:clickable">false</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">@dimen/dp_20</item>
+    </style>
+
+    <style name="icDate">
+        <item name="android:layout_width">@dimen/dp_18</item>
+        <item name="android:layout_height">@dimen/dp_18</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_5</item>
+        <item name="android:contentDescription">@string/ic_date</item>
+    </style>
+
+    <style name="date_newsDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_27</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+        <item name="android:layout_marginStart">@dimen/dp_27</item>
+        <item name="android:layout_marginEnd">@dimen/dp_10</item>
+    </style>
+
+    <style name="relativeLayout_ettor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:paddingLeft">@dimen/dp_16</item>
+        <item name="android:paddingRight">@dimen/dp_16</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="errorImage">
+        <item name="android:layout_width">@dimen/dp_200</item>
+        <item name="android:layout_height">@dimen/dp_200</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dp_60</item>
+    </style>
+
+    <style name="errorTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/errorImage</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="errorMessage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/errorTitle</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+    </style>
+
+    <style name="buttonRetry">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/errorMessage</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBackground</item>
+    </style>
+
+    <style name="FrameLayout_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cardView_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_11</item>
+        <item name="android:layout_marginTop">@dimen/dp_7</item>
+        <item name="android:layout_marginRight">@dimen/dp_11</item>
+        <item name="android:layout_marginBottom">@dimen/dp_7</item>
+    </style>
+
+    <style name="relativeLayout_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="imageTop_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_200</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:transitionName">img</item>
+    </style>
+
+    <style name="shadowBottom_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_80</item>
+        <item name="android:layout_alignBottom">@id/image_top</item>
+    </style>
+
+    <style name="progressBar_item" parent="android:Widget.DeviceDefault.Light.ProgressBar.Small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_70</item>
+    </style>
+
+    <style name="author_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_alignStart">@+id/title</item>
+        <item name="android:layout_alignLeft">@+id/title</item>
+        <item name="android:layout_alignTop">@+id/layoutDate</item>
+        <item name="android:layout_alignEnd">@id/layoutDate</item>
+        <item name="android:layout_alignRight">@id/layoutDate</item>
+        <item name="android:layout_marginRight">@dimen/dp_160</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="frameLayout_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/image_top</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginTop">@dimen/dp_minse_50</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:background">@drawable/round_white</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginEnd">@dimen/dp_20</item>
+    </style>
+
+    <style name="icDate_item">
+        <item name="android:layout_width">@dimen/dp_18</item>
+        <item name="android:layout_height">@dimen/dp_18</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_5</item>
+    </style>
+
+    <style name="publishedAt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_27</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+        <item name="android:layout_marginEnd">@dimen/dp_10</item>
+    </style>
+
+    <style name="title_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/image_top</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="description_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+    </style>
+
+    <style name="source_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_below">@id/desc</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/colorTextTitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">@dimen/dp_16</item>
+    </style>
+
+    <style name="time_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_below">@id/desc</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:layout_marginBottom">@dimen/dp_10</item>
+        <item name="android:layout_toRightOf">@id/source</item>
+        <item name="android:drawablePadding">@dimen/dp_10</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_toEndOf">@id/source</item>
     </style>
 </resources>

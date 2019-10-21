@@ -1,52 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/errorLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:paddingLeft="@dimen/dp_16"
-    android:paddingRight="@dimen/dp_16"
-    android:visibility="gone">
+    style="@style/relativeLayout_ettor">
 
     <ImageView
         android:id="@+id/errorImage"
-        android:layout_width="@dimen/dp_200"
-        android:layout_height="@dimen/dp_200"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dp_60"
+        style="@style/errorImage"
         android:src="@drawable/no_result" />
 
     <TextView
         android:id="@+id/errorTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/errorImage"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center_horizontal"
-        android:text="@string/error_title"
-        android:textColor="@color/colorTextTitle"
-        android:textStyle="bold" />
+        style="@style/errorTitle"
+        android:text="@string/error_title" />
 
     <TextView
         android:id="@+id/errorMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/errorTitle"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:text="@string/error_message"
-        android:textColor="@color/colorTextSubtitle" />
+        style="@style/errorMessage"
+        android:text="@string/error_message" />
 
     <Button
         android:id="@+id/btnRetry"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/errorMessage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dp_20"
-        android:backgroundTint="@color/colorAccent"
-        android:text="@string/retry"
-        android:textColor="@color/colorBackground" />
+        style="@style/buttonRetry"
+        android:text="@string/retry" />
 
 </RelativeLayout>

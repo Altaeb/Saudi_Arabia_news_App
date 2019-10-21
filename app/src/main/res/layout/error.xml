@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
         android:gravity="center_horizontal"
-        android:text="Error Title"
+        android:text="@string/error_title"
         android:textColor="#262626"
         android:textStyle="bold" />
 
@@ -35,7 +35,7 @@
         android:layout_below="@id/errorTitle"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:text="Error Message"
+        android:text="@string/error_message"
         android:textColor="#4e4e4e" />
 
     <Button
@@ -46,7 +46,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/colorAccent"
-        android:text="Retry"
+        android:text="@string/retry"
         android:textColor="#fff" />
 
 </RelativeLayout>

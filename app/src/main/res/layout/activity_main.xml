@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f9f9fa"
+    android:background="@color/colorBackground"
     tools:context="abdelfattah.saudiarabianews.MainActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f9f9fa">
+        android:background="@color/colorBackground">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -28,8 +28,8 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="16dp"
-                    android:text="Top Headlines"
-                    android:textColor="#262626"
+                    android:text="@string/top_headlines"
+                    android:textColor="@color/colorTextTitle"
                     android:textSize="17sp"
                     android:textStyle="bold"
                     android:visibility="invisible" />

@@ -25,12 +25,12 @@
                     android:id="@+id/topheadelines"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_16"
                     android:text="@string/top_headlines"
                     android:textColor="@color/colorTextTitle"
-                    android:textSize="17sp"
+                    android:textSize="@dimen/sp_17"
                     android:textStyle="bold"
                     android:visibility="invisible" />
 
